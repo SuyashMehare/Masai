@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug</title>
+</head>
+<body>
+    
+    <!-- 
+        kept `action` empty because
+        we do not have backend for 
+        action.  
+    -->
+    <form action="">
+
+        <!-- syntax error: for to be expected to use 
+                before=> Name="username" | 
+                 after=> for="username" > 
+        -->
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username"></input>
+      
+
+        <!-- 
+             syntax error: 
+                before=> <label> **attribute** | 
+                 after=> <label **attribute** >
+             incorrect id:
+                before=> for="passcode" | 
+                 after=> for="password" >
+        -->
+        <label for="password">Password:</label>
+
+        <!-- 
+            syntax error: 
+                before=> typ | after=> type 
+            best practise:
+                before=> id: "passcode" | after => id:"password" 
+                before=> no "required" keyword | added "required" keyword
+        -->
+        <input type="password" id="password" name="password" required>
+      
+
+        <!-- 
+            syntax error: 
+                before=> Submit | 
+                after=> type="submit" 
+         -->
+        <button type="submit">Submit Form</buttn>
+      </form>
+      
+      
+</body>
+</html>

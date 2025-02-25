@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+                This portfolio showcases my projects and provides information about 
+                my background and contact details.
+            </p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Hello! I'm a web developer passionate about building dynamic and responsive websites. 
+                I enjoy createing user-fridenly interfaces and working on challenging projects.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project name</th>
+                        <th>Description</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project Alpha</td>
+                        <td>A web-based tool for tracking project progress and managing tasks</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Project Site</td>
+                        <td>A personal website showcasing my work and skills as a web developer</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="" >
+                <div>
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+
+                <div>
+                    <label for="contact_email">Email:</label>
+                    <input type="email" id="contact_email" name="contact_email">
+                </div>
+                
+                <div>
+                    <label for="contact_message">Message:</label>
+                    <textarea name="contact_message" id="contact_message" rows="4"></textarea>
+                </div>
+               
+            
+                <button style="margin-top: 1rem;" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
